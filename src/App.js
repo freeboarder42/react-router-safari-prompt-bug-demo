@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Home';
-import ComponentWithPrompt from './ComponentWithPrompt';
+import ComponentWithHistoryBlock from './ComponentWithHistoryBlock';
 import './App.css';
 
 class App extends Component {
@@ -10,8 +10,8 @@ class App extends Component {
          <Router>
             <div className="container">
                <Switch>
-                  <Route exact path="/" component={Home} />
-                  <Route path="/pageWithPrompt" component={ComponentWithPrompt} />
+                  <Route exact path="/" component={Home}  />
+                  <Route path="/pageWithHistoryBlock" component={ComponentWithHistoryBlock}/>
                </Switch>
             </div>
          </Router>
